@@ -1,0 +1,248 @@
+
+/*
+    Author: Katrina Allen
+    Date: October 17, 2026
+    Project: Online Resume
+    File: style.css
+*/
+
+/* General Page Settings */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+    color: #252525;
+    background-color: #f7f7f7;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Header */
+.site-header {
+    background-color: #191919;
+    color: #ffffff;
+    text-align: center;
+    padding: 55px 20px;
+    border-bottom: 5px solid #b58b38;
+}
+
+.site-header h1 {
+    font-size: 2.8rem;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.job-title {
+    color: #e4be73;
+    font-size: 1.35rem;
+    font-weight: bold;
+    margin: 12px 0;
+}
+
+.tagline {
+    font-size: 0.95rem;
+    color: #e5e5e5;
+    margin-bottom: 0;
+}
+
+/* Navigation */
+nav {
+    background-color: #303030;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    padding: 14px 19px;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus-visible {
+    color: #191919;
+    background-color: #e4be73;
+}
+
+/* Main Resume Sections */
+main {
+    padding-top: 25px;
+    padding-bottom: 40px;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 28px 35px;
+    margin: 25px 0;
+    border-radius: 8px;
+    border-left: 5px solid #b58b38;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+}
+
+h2 {
+    color: #242424;
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e4be73;
+    padding-bottom: 10px;
+}
+
+h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #242424;
+    font-size: 1.15rem;
+}
+
+p {
+    margin-top: 0;
+}
+
+ul {
+    padding-left: 22px;
+}
+
+li {
+    margin-bottom: 7px;
+}
+
+/* Skills Cards */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.skill-card {
+    background-color: #f6f4ef;
+    border: 1px solid #e4d8c0;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+.skill-card h3 {
+    color: #684b19;
+}
+
+.skill-card ul {
+    margin-bottom: 0;
+}
+
+/* Experience and Education */
+.resume-entry {
+    margin-top: 15px;
+}
+
+.entry-subtitle {
+    font-weight: bold;
+    color: #665026;
+    font-size: 0.95rem;
+}
+
+/* Contact Information */
+address {
+    font-style: normal;
+}
+
+address p {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #805b19;
+    text-underline-offset: 3px;
+}
+
+a:hover {
+    color: #46300a;
+}
+
+a:focus-visible {
+    outline: 3px solid #a97720;
+    outline-offset: 3px;
+}
+
+/* Footer */
+footer {
+    background-color: #191919;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .site-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 22px;
+    }
+
+    nav a {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .site-header {
+        padding: 35px 15px;
+    }
+
+    .site-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .job-title {
+        font-size: 1.1rem;
+    }
+
+    .container {
+        width: 94%;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
+
+/* Accessibility: Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
